@@ -27,6 +27,6 @@ const deleteHotelByPhoneNumber = async (phoneNumber) => {
   // provide id from db : 69b8dcc376dd1da439352311
   await deleteHotelById("69b8dcc376dd1da439352311");
 
-  // provide phone number of sunset resort
+  // provide phone number of sunset resort:+1299655890
   await deleteHotelByPhoneNumber("+1299655890");
 })();
