@@ -1,15 +1,15 @@
 const API_BASE_URL = import.meta.env.VITE_BACKEND;
 
 export const DEFINE_APP_ROUTES = {
-  HOME: "/jobs",
-  JOB_DETAILS: `/jobs/:jobId`,
-  ADD_JOB: "/jobs/add",
+  HOME: "/",
+  JOB_DETAILS: `/:jobId`,
+  ADD_JOB: "/add",
 };
 
 export const APP_ROUTES = {
-  HOME: "/jobs",
-  JOB_DETAILS: (jobId) => `/jobs/${jobId}`,
-  ADD_JOB: "/jobs/add",
+  HOME: "/",
+  JOB_DETAILS: (jobId) => `/${jobId}`,
+  ADD_JOB: "/add",
 };
 
 export const API_ROUTES = {
