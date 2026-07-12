@@ -8,7 +8,7 @@ export const DEFINE_APP_ROUTES = {
 
 export const APP_ROUTES = {
   HOME: "/jobs",
-  JOB_DETAILS: (jobId) => `/jobs/${JobId}`,
+  JOB_DETAILS: (jobId) => `/jobs/${jobId}`,
   ADD_JOB: "/jobs/add",
 };
 
@@ -17,9 +17,15 @@ export const API_ROUTES = {
   job: {
     getPostings: `${API_BASE_URL}/postings`,
     getDetail: (jobId) => `${API_BASE_URL}/postings/${jobId}`,
-    getJobsByTitle: (title) =>
-      `${API_BASE_URL}//postings/search?title=${title}`,
+    getJobsByTitle: (title) => `${API_BASE_URL}/postings/search?title=${title}`,
     postJob: `${API_BASE_URL}/postings`,
     deleteJob: (jobId) => `${API_BASE_URL}/postings/${jobId}`,
   },
 };
+
+export const JOB_TYPES = [
+  "Full-time (On-site)",
+  "Part-time (On-site)",
+  "Full-time (Remote)",
+  "Part-time (Remote)",
+];
