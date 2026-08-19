@@ -1,0 +1,4 @@
+hello world
+this is text written in a text file
+its extension is .txt
+This is new Line
