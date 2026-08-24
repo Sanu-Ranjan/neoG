@@ -16,7 +16,3 @@ try {
 } catch (error) {
   console.log(error);
 }
-
-try {
-  fs.writeFileSync;
-} catch (error) {}
